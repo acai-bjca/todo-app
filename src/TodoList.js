@@ -3,7 +3,8 @@ import {Todo} from './Todo';
 
 export class TodoList extends React.Component {    
     render(){
-        const listTodo = this.props.todoList;
+        //const listTodo = this.props.todoList;
+        const listTodo = this.props.items;
         const listItems = listTodo.map(
             item => <li><Todo itemTodo={item}/></li>
         );
